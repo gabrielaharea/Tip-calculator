@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./tip.calculator.css">
+</head>
+<body>
+  <section class="calcul">
+    <h1>Tip Calculator</h1>
+    <hr>
+    <form>
+      <br>
+          <label>Bill total:</label>
+          <input id="totalBill" type="text" required>
+          <br>
+          
+          <p>The Service level:</p>
+          <input type="radio" id="Out" name="service_level" value="0.30">
+          <label for="a1">Outstanding-30%</label><br>
+          
+          <input type="radio" id="Good" name="service_level" value="0.20">
+          <label for="a2">Good 20%</label><br>  
+          
+          <input type="radio" id="ok" name="service_level" value="0.15">
+          <label for="a3">OKish 15%</label><br>
+        
+          <input type="radio" id="bad" name="service_level" value="0.10">
+          <label for="a4">Bad 10%</label><br>
+          
+          <input type="radio" id="never" name="service_level" value="0.0">
+          <label for="a5">Never coming back 0%</label><br><br>
+          <br>
+          
+          <label for="speed">The number of persons</label>
+          <select id="numberPersons" name="speed" required>
+             <option value="1">1</option> 
+             <option value="2">2</option> 
+             <option value="3">3</option> 
+             <option value="4">4</option> 
+             <option value="5">5</option> 
+             <option value="6">6</option> 
+             <option value="7">7</option> 
+             <option value="8">8</option> 
+             <option value="9">9</option> 
+             <option value="10">10</option> 
+          </select>
+          
+          <br>
+          <br>
+          <button id="calcul" class="cal" type="button">CALCULATE TIP</button>
+          <br>
+          <br>
+            <label>TOTAL</label>
+            <label id="rezult"></label><label>$</label>
+            <br>
+          
+        </label>
+      </form>
+    </section>
+  </body>
+  <script src="tip.calculator.js"></script>
+  </html>
